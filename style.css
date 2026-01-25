@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.right{
+    background-color: rgb(210,210,210);
+    width: 50vw;
+    height: 100%;
+    position: fixed;
+    right: 0;
+}
+.right img{
+    margin-left: 220px;
+    margin-top: 220px;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    padding: 25px;
+    gap: 40px;
+}
+.nav{
+   font-family: Poppins;
+   text-decoration: underline;
+   padding: 0px 300px;
+   background-color:rgba(151, 151, 151, 0.958);
+   height: 70px;
+}
+.intro{
+    position: relative;
+}
+.heading{
+    margin-left:140px ;
+    margin-top: 140px;
+
+}
+
+.heading h1{
+     font-family: Quintessential;
+     font-size: 60px;
+}
+
+.heading h2{
+    margin-top: 10px;
+    font-family: Poppins;
+    font-weight: 200;
+}
+
+.contact{
+    font-family: poppins;
+    margin-left:140px ;
+    margin-top: 140px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.bold{
+    font-weight: 500;
+}
+.about{
+    margin: 400px 50px;
+    width: 650px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0px 1px 20px 0px black;
+    text-align: left;
+    animation: ease-out 4s;
+    border-radius: 10px;
+}
+.about h1{
+   font-family:IBM Plex Serif;
+    font-weight: 300;
+    padding: 30px;
+}
+.about p{
+    padding: 0px 20px;
+   font-family:IBM Plex Serif;
+   line-height: 25px;
+}
+.education{
+    margin: 550px 50px;
+    width: 650px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 1px 20px 0px black;
+    text-align: left;
+    line-height: 28px;
+    border-radius: 10px;
+}
+.education h2{
+    font-family:IBM Plex Serif;
+    font-weight: 300;
+    padding: 30px;
+    font-size: 30px;
+}
+.p{
+    margin-left: 50px;
+    font-size: 18px;
+    font-family:IBM Plex Serif;
+}
+.skills{
+     margin: 400px 50px;
+    width: 650px;
+    height: 330px;
+    background-color: white;
+    box-shadow: 0px 1px 20px 0px black;
+    text-align: left;
+    border-radius: 10px;
+}
+.skills h2{
+    font-family:IBM Plex Serif;
+    font-weight: 300;
+    padding: 30px;
+    font-size: 30px;
+}
+.s{
+    margin-left: 50px;
+    font-size: 18px;
+    font-family:IBM Plex Serif;
+    line-height: 30px;
+}
+.projects{
+    margin: 520px 50px;
+    width: 650px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0px 1px 20px 0px black;
+    text-align: left;
+    border-radius: 10px;
+}
+.projects h2{
+    font-family:IBM Plex Serif;
+    font-weight: 300;
+    padding: 30px;
+    font-size: 30px;
+}
+.w{
+    margin-left: 50px;
+    font-size: 18px;
+    font-family:IBM Plex Serif;
+    line-height: 30px;
+}
+.about:hover{
+    transform: scale(1.05);
+    background-color: rgba(13, 87, 148, 0.425);
+}
+.education:hover{
+    transform: scale(1.05);
+    background-color: rgba(13, 87, 148, 0.425);
+}
+.skills:hover{
+    transform: scale(1.05);
+    background-color: rgba(13, 87, 148, 0.425);
+}
+.projects:hover{
+    transform: scale(1.05);
+    background-color: rgba(13, 87, 148, 0.425);
+}
+a{
+    color: black;
+}
+a:hover{
+    color: rgb(30, 10, 164);
+}
+@media (max-width: 1350px) {
+
+  .nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .main{
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  .intro{
+    text-align: center;
+  }
+  .right{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .left{
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .heading, .contact{
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  .about, .education, .skills, .projects{
+    margin: 60px 20px;
+    width: auto;
+    height: auto;
+  }
+
+  .nav ul{
+    margin-left: -250px;
+    gap: 15px;
+    font-size: 14px;
+  }
+  .right img{
+    width: 200px;
+    display: block;
+    margin: 100px auto;
+  }
+}
